@@ -24,7 +24,7 @@ convertItemToPriority = function(item) {
 }
 
 
-backpacks = read_lines("Input3", n_max=300)
+backpacks = read_lines("Day 3/Input", n_max=300)
 splitBackpacks = lapply(backpacks, splitBackpacks)
 commonItems = lapply(splitBackpacks, findCommonItems)
 priorities = lapply(commonItems, convertItemToPriority)

@@ -26,7 +26,7 @@ getDesiredOutcomeStrategyScore = function(guide) {
   return (3)
 }
 
-strategyGuide = read_lines("Input2", n_max = 2501)
+strategyGuide = read_lines("Day 2/Input", n_max = 2501)
 
 partOneStrategyGuide = lapply(strategyGuide, FUN = function(guide) return (getStrategyScore(guide) + getOutcomeScore(guide)))
 print(sum(as.numeric(partOneStrategyGuide)))

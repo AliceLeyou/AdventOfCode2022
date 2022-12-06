@@ -10,7 +10,7 @@ doAssignmentsRelate = function(splittedAssignment, relationFn) {
             relationFn(toRange(splittedAssignment[[2]]) %in% toRange(splittedAssignment[[1]])))
 }
 
-assignments = read_lines("Input4", n_max = 1000)
+assignments = read_lines("Day 4/Input", n_max = 1000)
 splittedAssignments = strsplit(assignments, split = ",")
 
 isAssignmentDuplicated = lapply(splittedAssignments, function(splittedAssignment) return (doAssignmentsRelate(splittedAssignment, all)))

@@ -1,6 +1,6 @@
 library(readr)
 
-calories = read_lines("Input1", n_max = 2256)
+calories = read_lines("Day 1/Input", n_max = 2256)
 
 caloriesByElf = c()
 
